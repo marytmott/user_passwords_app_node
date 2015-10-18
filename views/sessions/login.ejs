@@ -1,3 +1,19 @@
 <% include ../partials/header %>
+<h1>Log In</h1>
+
+<form action="/login" method="POST">
+  <div>
+    <label>Email:
+      <input type="text" name="user[email]" placeholder="your email" />
+    </label>
+  </div>
+  <div>
+    <label>Password:
+      <input type="password" name="user[password]" placeholder="your password" />
+    </label>
+  </div>
+  <input type="submit" value="Log In" />
+</form>
+<p><a href="/signup">Click here</a> to create an account.</p>
 
 <% include ../partials/footer %>

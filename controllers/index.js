@@ -5,5 +5,7 @@ app.get('/', function(req, res) {
 require('./sessions');
 
 app.get('*', function(req, res) {
-  res.redirect('back');
+  // console.log(req.headers);
+  res.redirect('login');
+  // res.redirect('back');
 });

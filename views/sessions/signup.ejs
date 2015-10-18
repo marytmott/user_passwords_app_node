@@ -1,3 +1,25 @@
 <% include ../partials/header %>
 
+<h1>Sign Up</h1>
+<div id="errors">
+</div>
+<form action="/signup", method="POST">
+  <div>
+    <label>Email:
+      <input type="text" id="email" name="user[email]" placeholder="enter your email" />
+    </label>
+  </div>
+  <div>
+    <label>Password:
+      <input type="password" id="pw1" name="user[password]" placeholder="enter a password" />
+    </label>
+  </div>
+  <div>
+    <label>Confirm your password:
+      <input type="password" id="pw2" placeholder="type your password again" />
+    </label>
+  </div>
+  <input type="submit" value="Sign Up" />
+</form>
+
 <% include ../partials/footer %>
