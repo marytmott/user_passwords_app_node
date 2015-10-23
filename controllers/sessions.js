@@ -9,16 +9,16 @@ app.get('/signup', function(req, res) {
 });
 
 app.post('/signup', function(req, res) {
-  // res.send(req.body.user);
-  db.User.create(req.body.user), function(err, user) {
-    if (err) {
-      console.log(err);
-      res.redirect('/signup');
-    } else {
-      console.log(user);
-      res.send('welcome');
-    }
-  }
+  res.send(req.body.user);
+  // db.User.create(req.body.user, function(err, user) {
+  //   if (err) {
+  //     console.log(err);
+  //     res.redirect('/signup');
+  //   } else {
+  //     console.log(user);
+  //     res.send('welcome');
+  //   }
+  // });
 });
 
 app.get('/logout', function(req, res) {
